@@ -9,7 +9,7 @@ export const fetchGPTResponse = async (prompt) => {
       {
         model: 'gpt-3.5-turbo',
         messages: [{ role: 'user', content: prompt }],
-        max_tokens: 150,
+        max_tokens: 500,
         temperature: 0.7,
       },
       {
