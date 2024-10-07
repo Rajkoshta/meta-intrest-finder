@@ -28,7 +28,8 @@ const App = () => {
       // Fetch response from OpenAI API with dynamic business, services, and region
       const prompt = `I am a ${business} selling ${services} across ${region}. 
         Please give me a detailed list of Facebook interests. 
-        Please give me the list only so that I can target directly.`;
+        Please give me the list only so that I can target directly. 
+        Please provide at least 50 interests, but preferably 70 or more.`;
       const gptResponse = await fetchGPTResponse(prompt);
       setInterests(gptResponse); // Update interests with OpenAI results
     }
